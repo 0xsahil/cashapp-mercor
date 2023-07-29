@@ -20,11 +20,12 @@ import paymentsFloor from "./paymentsFloor.svg";
 
 
 // Banking Items
-import bankingHole from "./bankingHole.svg";
 import bankingColumn from "./bankingColumn.svg";
 import bankingCubes from "./bankingCubes.svg";
+import bankingHole from "./bankingHole.svg";
 import bankingHoleBottom from "./bankingHoleBottom.svg";
 import bankingMonster from "./bankingMonster.svg";
+import bankingPhone from "./bankingPhone.svg";
 import bankingRampLeft from "./bankingRampLeft.svg";
 import bankingRampRight from "./bankingRampRight.svg";
 import bankingStairsLeft from "./bankingStairsLeft.svg";
@@ -61,6 +62,7 @@ export {
   bankingHole,
   bankingHoleBottom,
   bankingMonster,
+  bankingPhone,
   bankingRampLeft,
   bankingRampRight,
   bankingStairsLeft,
