@@ -34,6 +34,23 @@ import bankingTrackLeft from "./bankingTrackLeft.svg";
 import bankingTrackRight from "./bankingTrackRight.svg";
 import bankingTube from "./bankingTube.svg";
 
+// Boost items
+import boostBurger from "./boostBurger.svg";
+import boostCard from "./boostCard.svg";
+import boostCoffee from "./boostCoffee.svg";
+import boostHand from "./boostHand.svg";
+import boostPhone from "./boostPhone.svg";
+import boostShoe from "./boostShoe.svg";
+import boostStairsLeft from "./boostStairsLeft.svg";
+import boostStairsRight from "./boostStairsRight.svg";
+
+// Investing Items
+import investingFloor from "./investingFloor.svg";
+import investingGraphLeft from "./investingGraphLeft.svg";
+import investingGraphRight from "./investingGraphRight.svg";
+import investingPhoneLeft from "./investingPhoneLeft.svg";
+import investingPhoneRight from "./investingPhoneRight.svg";
+
 
 export {
   // Navbar Items
@@ -71,5 +88,20 @@ export {
   bankingTrackRight,
   bankingTube,
 
+  // Boost Itmes
+  boostBurger,
+  boostCard,
+  boostCoffee,
+  boostHand,
+  boostPhone,
+  boostShoe,
+  boostStairsLeft,
+  boostStairsRight,
   
+  // Investing Items
+  investingFloor,
+  investingGraphLeft,
+  investingGraphRight,
+  investingPhoneLeft,
+  investingPhoneRight,
 };
