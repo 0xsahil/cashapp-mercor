@@ -13,37 +13,34 @@ import {
 
 const Home = () => {
   return (
-    <div className="flex w-full px-2 items-center justify-center bg-black overflow-hidden h-[100vh]">
+    <div className="flex w-full px-2 items-center justify-center bg-black overflow-visible h-[100vh]">
       <img src={rays} alt="rays" className="w-full h-full z-0" />
-      <div className="absolute top-16 flex items-start justify-between w-full lg:w-[90%] z-10 mx-auto overflow-hidden px-0 lg:px-10">
+      <div className="absolute w-[80%] h-[20%] md:h-[30%] top-16 flex items-start justify-between lg:w-[90%] z-10 mx-auto overflow-hidden px-0 lg:px-10">
         <img src={homeCube} alt="cube" />
-        <img src={homeStairs} alt="Stairs" />
+        <img src={homeStairs} alt="Stairs" className="h-full" />
       </div>
-      <div className="absolute bottom-0 flex items-start justify-between w-full lg:w-[90%] z-10 mx-auto overflow-hidden px-0 lg:px-10">
-        <img src={homeCubes} alt="cubes" />
-        <img src={homePillar} alt="Pillar" />
+      <div className="absolute bottom-0 w-[80%] h-[10%]  md:h-[20%] flex items-start justify-between lg:w-[90%] z-10 mx-auto overflow-hidden px-0 lg:px-10">
+        <img src={homeCubes} alt="cubes" className="h-full" />
+        <img src={homePillar} alt="Pillar" className="h-full" />
       </div>
       {/* Main heading  */}
-      <div className="absolute text-white text-[180px] font-extrabold flex items-center justify-center">
-        <p className="absolute top-0 z-10 headings">CASH</p>
-        <img src={homePhone} alt="Phone" className=" top-0 z-20" />
-        <p className="absolute bottom-0 z-30 headings">APP</p>
+      <div className="absolute text-white text-7xl md:text-[120px] lg:text-[180px] h-52 md:h-[40%] lg:h-auto font-extrabold flex items-center justify-center">
+        <p className="absolute top-10 md:top-1/4 lg:top-0 z-10 headings">CASH</p>
+        <img src={homePhone} alt="Phone" className=" h-full top-0 z-20 md:h-[80%] " />
+        <p className="absolute bottom-0 md:bottom-20 md:opacity-95 z-30 headings">APP</p>
       </div>
       {/* Footer */}
-      <div className="flex items-center justify-between absolute bottom-2 w-full z-20 px-4 py-6">
+      <div className="flex lg:flex items-center justify-between absolute bottom-2 w-full z-20 px-4 py-6">
         {/* Buttons */}
         <div className="flex text-white headings">
-          <button className="flex items-center justify-around uppercase px-4 py-4 border-[1px] border-white bg-black rounded-lg mx-4">
+          <button className="flex items-center justify-around uppercase p-3 lg:p-4 border-[1px] border-white bg-black rounded-lg mx-4">
             {" "}
-            <SiApple className="text-[#00D54B] lg:mr-4 " size={30} />{" "}
+            <SiApple className="text-[#00D54B] lg:mr-4 text-2xl lg:text-3xl " />{" "}
             <p className="hidden lg:inline">APP STORE</p>{" "}
           </button>
-          <button className="flex items-center justify-around uppercase px-4 py-4 border-[1px] border-white bg-black rounded-lg mx-4">
+          <button className="flex items-center justify-around uppercase p-3 lg:p-4 border-[1px] border-white bg-black rounded-lg mx-4">
             {" "}
-            <BiLogoPlayStore
-              className="text-[#00D54B] lg:mr-4 "
-              size={30}
-            />{" "}
+            <BiLogoPlayStore className="text-[#00D54B] lg:mr-4 text-2xl lg:text-3xl " />{" "}
             <p className="hidden lg:inline">google play</p>{" "}
           </button>
         </div>
@@ -53,7 +50,7 @@ const Home = () => {
         </div>
         {/* Text */}
         <div className="flex w-2/5 text-[10px] text-[#B6B6B6] items-center justify-center">
-          <p className="w-[60%]">
+          <p className="hidden lg:block w-[60%]">
             Brokerage services by Cash App Investing LLC, member FINRA / SIPC.
             See our BrokerCheck. Investing involves risk; you may lose money.
             Bitcoin trading offered by Cash App. Cash App Investing does not
