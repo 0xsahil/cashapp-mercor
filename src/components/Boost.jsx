@@ -25,7 +25,7 @@ const Boost = () => {
         className=" w-full md:w-[90%] lg:w-[60%] absolute lg:relative right-0"
       />
       {/* Main heading */}
-      <div className="hidden absolute bottom-28 right-1/3 flex w-[40%] mr-10 items-start justify-center">
+      <div className="absolute bottom-1/4  lg:bottom-28 md:left-20 lg:left-1/4 md:w-[70%] lg:w-[40%] mb-10 lg:mb-0 flex items-start justify-center">
         <div className="px-2 py-4 mt-20">
           <h1 className="headings text-4xl text-[#00D54B]">
             Cash Card & Boost
@@ -56,9 +56,13 @@ const Boost = () => {
       <img
         src={boostHand}
         alt="Hand"
-        className="absolute right-20 md:right-36 lg:left-3/4 bottom-1/4 md:bottom-1/3 lg:bottom-3/4 lg:ml-28 mb-10 md:mb-20 lg:mb-10"
+        className="hidden lg:block absolute right-20 md:right-36 lg:left-3/4 bottom-1/4 md:bottom-1/3 lg:bottom-3/4 lg:ml-28 mb-10 md:mb-20 lg:mb-10"
       />
-      <img src={boostCard} alt="Card" className="absolute left-5 bottom-1/4 lg:top-1/4 lg:left-3/4" />
+      <img
+        src={boostCard}
+        alt="Card"
+        className="absolute left-5 bottom-1/4 lg:top-1/4 lg:left-3/4"
+      />
     </div>
   );
 };
