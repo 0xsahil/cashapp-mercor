@@ -7,13 +7,13 @@ import { investingFloor, investingGraphLeft, investingGraphRight, investingPhone
 
 const Investing = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#00D54B] w-full h-[100vh] relative">
+    <div className="flex flex-col items-center justify-center bg-[#00D54B] w-full h-[100vh] relative overflow-hidden">
       <img src={rays} alt="Rays" className="absolute w-full h-[100vh] z-[1]" />
       <h1 className="headings text-5xl text-white mb-20">Investing</h1>
       {/* Main Container */}
       <div className="flex items-center justify-between w-[80%] mx-auto z-10">
         {/* Stocks */}
-        <div className="flex w-[45%]">
+        <div className="flex flex-col md:flex-row w-[45%]">
           <div className="text-black mr-10">
             <h2 className="headings text-2xl">Stocks</h2>
             <p>
@@ -25,7 +25,7 @@ const Investing = () => {
           <img src={investingPhoneLeft} alt="Phone" />
         </div>
         {/* Bitcoin */}
-        <div className="flex w-[45%]">
+        <div className="flex flex-col md:flex-row w-[45%]">
           <img src={investingPhoneLeft} alt="Phone" />
           <div className="text-black ml-10">
             <h2 className="headings text-2xl">Bitcoin</h2>
@@ -40,17 +40,17 @@ const Investing = () => {
       <img
         src={investingFloor}
         alt="Floor"
-        className="absolute bottom-0 w-full"
+        className="absolute bottom-0 w-full md:h-[30%] lg:h-auto"
       />
       <img
         src={investingGraphLeft}
         alt="Graph"
-        className="absolute left-0 top-2/4"
+        className="absolute left-0 top-3/4 lg:top-2/4"
       />
       <img
         src={investingGraphRight}
         alt="Graph"
-        className="absolute right-0 bottom-1/3"
+        className="absolute right-0 bottom-2/3 md:bottom-1/3"
       />
       {/* Footer */}
       <div className="flex items-center justify-between absolute bottom-2 w-[90%] z-20 px-4 py-6">
@@ -72,7 +72,7 @@ const Investing = () => {
         </div>
         {/* Text */}
         <div className="flex w-2/5 text-[10px] text-black items-center justify-center">
-          <p className="w-[60%]">
+          <p className="hidden lg:block w-[60%]">
             Brokerage services by Cash App Investing LLC, member FINRA / SIPC.
             See our BrokerCheck. Investing involves risk; you may lose money.
             Bitcoin trading offered by Cash App. Cash App Investing does not
